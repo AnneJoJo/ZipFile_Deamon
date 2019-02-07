@@ -13,7 +13,7 @@ the variable password is in the 'sent_email()'.
 2. This program may not work on Linix system, because I only run it on the Windows
 3. The program still follows the daemon way, and exit by sigterm kill (use Ctrl+c)
 4. The commandline input for this progam is 
-    compress_stuff.py  -n absolute path -e noreply@appnexus.com -s 500
+    compress_stuff.py  -n absolute path -e ####@gmail.com -s 500
 
 
 """
@@ -170,10 +170,10 @@ class FileCompression:
         body = "This is an email with attachment zipFiles sent from Python\n" + tmp_message
         port = 587  # For starttls
         smtp_server = "smtp.gmail.com"
-        sender_email = "jlanne119@gmail.com"  # local email server
+        sender_email = "####@gmail.com"  # local email server
         receiver_email = self.ename  # the email address sent to
 
-        password = "gtxy54ylwdm"  # local email password need setting up
+        password = "######"  # local email password need setting up
         # Create a multipart message and set headers
         message = MIMEMultipart()
         message["From"] = sender_email
